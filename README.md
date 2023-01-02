@@ -7,7 +7,7 @@ use ip2geo;
 use std::net::IpAddr;
 
 fn main() {
-    lel address: IpAddr = "152.179.124.137".parse().unwrap();
+    let address: IpAddr = "152.179.124.137".parse().unwrap();
     let country_code = ip2geo::search(address).unwrap().country;
     println!("{}", country_code);
 }
