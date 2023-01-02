@@ -1,0 +1,16 @@
+[package]
+name = "ip2geo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "ip2geo"
+path = "src/lib.rs"
+
+[dependencies]
+rust-embed="6.4.2"
+rmp-serde = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+lazy_static="*"
